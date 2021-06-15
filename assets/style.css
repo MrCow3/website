@@ -1,4 +1,4 @@
-/* By 0xRar */
+/* Proudly By 0xRar */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 :root {
@@ -106,6 +106,103 @@ p {
     }
 }
 
-@media only screen and (min-width: 600px) {
 
+#contact-container {
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #1B262C;
+    border-radius: 8px;
+    opacity: 0.4;
+    color: whitesmoke;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#contact-container:hover {
+    opacity: 1.0;
+    transition: 0.5s ease-out;
+
+}
+
+#con-header {
+    width: auto;
+    color: var(--Or);
+    font-family: 'Poppins', Arial;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    mix-blend-mode: lighten;
+}
+
+
+#social-links {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+    mix-blend-mode: lighten;
+}
+
+#social-links:hover {
+    color: var(--crimson);
+    transition: 0.4s;
+    transform: translate(10px, 8px);
+}
+
+#heart {
+    top: 95%;
+    position: absolute;
+    border: none;
+    animation: beat 1s infinite;
+    transition: 0.3s;
+    font-size: 3vh;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(.75);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(.75);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+    
+    80% {
+        transform: scale(.75);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@media only screen and (max-width: 820px) {
+    #contact-container {
+        background-color: var(--MainBGC);
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-height: 751px) {
+    #con-header {
+        top: 30%;
+    }
 }
