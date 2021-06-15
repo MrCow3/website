@@ -101,8 +101,11 @@ p {
         content: 'let 1 Army JROTC';
     }
 
-    100%{
+    75%{
         content: 'FOSS advocate';
+    }
+    100%{
+    	content: 'Political Figure';
     }
 }
 
